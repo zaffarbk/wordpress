@@ -1,0 +1,88 @@
+.footer__catalog-list-column {
+  max-width: 190px; }
+
+.wpcf7-not-valid-tip, .wpcf7 form.invalid .wpcf7-response-output {
+  display: none !important; }
+
+input.wpcf7-not-valid {
+  border-color: #f00 !important; }
+
+.order-form__wrapper br {
+  display: none; }
+
+.wpcf7 form.sent .wpcf7-response-output {
+  margin: 20px 0 0;
+  color: green;
+  border: 0;
+  padding: 0;
+  text-align: center; }
+
+.catalog-menu__item-head {
+  text-decoration: none; }
+
+.order-form__popup {
+  z-index: 2; }
+
+.wp-block-image {
+  margin: 0; }
+  .wp-block-image figcaption {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin: 0; }
+
+.path {
+  color: #b3b3b3;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+  .path a {
+    color: #7a7a7a;
+    text-decoration: none; }
+  .path .current-item {
+    background: url(../images/arrowtextDown.svg) 100% 55% no-repeat;
+    padding-right: 30px; }
+  .path > span:first-child {
+    display: none; }
+    .path > span:first-child + .arrow {
+      display: none; }
+  .path .arrow {
+    padding-right: 30px;
+    background: url(../images/arrowtext.svg) 100% 50% no-repeat;
+    height: 11px;
+    margin-right: 20px; }
+
+.decision__lead p {
+  margin: 0; }
+
+.comments__item-img img {
+  max-width: 130px; }
+
+.catalog__section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .catalog__section-item img {
+    margin-bottom: 15px; }
+
+.page__head.fullwidth {
+  max-width: none; }
+
+.catalog__item-txt {
+  flex-grow: 2; }
+
+.prod__img-txt p:first-child {
+  margin-top: 0; }
+
+.prod__tab-result-docs-list {
+  height: auto;
+  padding-bottom: 30px; }
+
+.prod__form-btn {
+  white-space: nowrap; }
+
+.select__item:last-child {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */
