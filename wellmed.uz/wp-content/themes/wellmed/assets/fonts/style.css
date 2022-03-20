@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Averta Cyrillic Light';
+  src: url('/path-to/Averta Cyrillic Light.woff2') format('woff2'),
+       url('/path-to/Averta Cyrillic Light.woff') format('woff'),
+       url('/path-to/Averta Cyrillic Light.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'Averta Cyrillic Light', sans-serif;
+}

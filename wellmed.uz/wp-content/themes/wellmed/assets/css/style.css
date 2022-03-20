@@ -1,0 +1,1226 @@
+@font-face {
+    font-family: 'Averta CY Light';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Averta CY Regular';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Averta CY SemiBold';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Averta CY Bold';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Averta CY ExtraBold';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Averta CY Black';
+    src: url('http://wellmed.loc/wp-content/themes/wellmed/assets/fonts/Averta\ Cyrillic\ Black.woff2') format('woff2');
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Averta CY Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.header {
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.1);
+}
+
+.header__top {
+    padding: 29px 0 15px;
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(to right, #fff, 20%, #cfcfcf 80%, #fff);
+    border-image-slice: 1;
+}
+
+.header__topInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logoWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 190px;
+}
+
+.header__logoLink {
+    display: inline-block;
+    max-width: 180px;
+    width: fit-content;
+    max-height: 69px;
+    margin-right: 36px;
+}
+
+.header__logo {
+    max-width: 100%;
+    max-height: 69px;
+}
+
+.header__logoText {
+    font-size: 16px;
+    max-width: 287px;
+    line-height: 1.2;
+    padding-bottom: 8px;
+    color: #565656;
+}
+
+.header__phone,
+.mob-header__phone {
+    display: flex;
+    align-items: center;
+    font-family: 'Averta CY ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    transition: .3s;
+}
+
+.mob-header__phone {
+    display: none;
+}
+
+.header__phone:hover {
+    color: #333;
+}
+
+.header__phoneWrapper {
+    background-color: #1761AC;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.default-btn {
+    display: block;
+    font-family: 'Averta CY ExtraBold', sans-serif;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #1761AC;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.default-btn:hover {
+    background-color: #0b549c;
+    color: #fff;
+}
+
+.header__btn {
+    width: 193px;
+}
+
+.language-switcher li a {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 16px;
+    font-family: 'Averta CY SemiBold';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+}
+.language-switcher li a img {
+    width: 22px!important;
+    height: 17px!important;
+}
+
+.header__language:hover {
+    background-color: #f8f5f5;
+    color: #000;
+}
+
+.header__language>img {
+    margin-right: 3.5px;
+}
+
+.header__bottom {
+    padding: 15px 0;
+}
+
+.menu {
+    width: 30px;
+    height: 20px;
+    display: none;
+}
+
+.menu__item {
+    transform: translateY(9px);
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+}
+
+.menu__item::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.menu__item::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-close {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 33px;
+    font-size: 35px;
+    text-align: center;
+}
+.nav__list{
+    display: flex;
+}
+.nav__list li a {
+    margin-right: 80px;
+    font-family: 'Averta CY SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    transition: .3s;
+}
+
+.nav__list li a:hover {
+    color: #00AFEF;
+}
+
+.intro {
+    background: url(../img/intro-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 106px 0 251px;
+}
+
+.intro__inner {
+    position: relative;
+}
+
+.intro__swiper-pagination {
+    bottom: -72px;
+}
+
+.intro__swiper-pagination>.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 0;
+    transform: rotate(45deg);
+}
+
+.intro__swiper-pagination>.swiper-pagination-bullet-active {
+    background-color: #00AFEF;
+}
+
+.intro__swiper-item {
+    max-width: 470px;
+}
+
+.intro__title {
+    font-family: 'Averta CY Black', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #26C7E3;
+    margin-bottom: 23px;
+}
+
+.intro__title>span {
+    color: #333;
+}
+
+.intro__swiper-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.intro__btn {
+    width: 216px;
+}
+
+.intro-bottom {
+    background-color: #26C7E3;
+}
+
+.intro-bottom__inner .col-sm-6:nth-child(2n+2) {
+    background-color: #1761AC;
+}
+
+.intro-bottom__inner .col-sm-6:nth-child(2n+2)>.intro-bottom__card {
+    padding: 30px 20px 32px;
+}
+
+.intro-bottom__card {
+    padding: 30px 50px 32px;
+    margin-bottom: 5px;
+}
+
+.intro-bottom__card-icon {
+    margin-bottom: 7px;
+}
+
+.intro-bottom__card-title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.intro-bottom__card p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.whowe {
+    padding: 70px 0;
+}
+
+.whowe__photo-wrapper {
+    text-align: center;
+}
+
+.whowe__photo {
+    width: 90%;
+    height: auto;
+}
+
+.whowe__content {
+    padding-top: 35px;
+}
+
+.default-suptitle {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #16B8C2;
+}
+
+.default-title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.whowe__title {
+    margin-bottom: 18px;
+}
+
+.whowe__content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.contactus {
+    background: url(../img/contactus-img.jpg) no-repeat center/cover;
+    padding: 34px 0 59px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.contactus__title {
+    margin-bottom: 8px;
+}
+
+.contactus__inner p {
+    max-width: 770px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+}
+
+.contactus__btn {
+    width: 216px;
+    margin: 0 auto;
+    background-color: #26C7E3;
+}
+
+.contactus__btn:hover {
+    background-color: #289baf;
+}
+
+.catalogoofproducts {
+    padding: 80px 0 40px;
+}
+
+.catalogoofproducts__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 63px;
+    position: relative;
+}
+
+.catalogoofproducts__header::after {
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    width: 100%;
+    height: 1px;
+    background-color: #F5F7FA;
+}
+
+.catalogoofproducts__title {
+    margin: 0 37px;
+}
+
+.catalogoofproducts__content>.row>.col-6 {
+    margin-bottom: 30px;
+}
+
+.catalogofproducts__sort {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    font-size: 18px;
+    line-height: 1;
+    color: #AFB0B4;
+    background: #F5F7FA;
+    border-radius: 4px;
+    padding: 10px 22px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.nav-tabs {
+    border:none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #16B8C2;
+    color: #fff;
+    border: none;
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    padding: 30px 27px;
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s;
+}
+
+.product__img-wrapper {
+    display: inline-block;
+    width: 195px;
+    height: 195px;
+    margin-bottom: 5px;
+}
+
+.product__img {
+    width: 100%;
+    height: auto;
+}
+
+.product__suptitle {
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    color: #AFB0B4;
+    margin-bottom: 6px;
+}
+
+.product__title {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #00AFEF;
+    margin-bottom: 14px;
+}
+
+.product__name {
+    display: block;
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.product__text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #AFB0B4;
+    max-width: 211px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.product__info {
+    display: block;
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: #323234;
+    margin-bottom: 22px;
+}
+
+.product__btn {
+    background-color: #fff;
+    color: #1761AC;
+    border: 1px solid #1761AC;
+    width: 100%;
+}
+
+.catalogoofproducts__btn {
+    max-width: 249px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.anyquestion {
+    background: url(../img/anyquestion-img.jpg) no-repeat center/cover;
+    padding: 35px 0px 78px;
+}
+
+.anyquestion__inner {
+    width: 58%;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.anyquestion__header {
+    margin-bottom: 31px;
+}
+
+.form__input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__input-group>input,
+.form__textarea {
+    width: 49%;
+    background: rgba(23, 97, 172, 0.46);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 15px 18px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 31px;
+}
+
+.form__input-group>input::placeholder,
+.form__textarea::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: #acacac;
+}
+
+.form__textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 21px;
+}
+
+.form__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__checkbox {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+input.form__check[type=checkbox] {
+    margin-right: 9px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+input.form__check[type=checkbox]:checked:after {
+    content: "\2714";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #29F3FF;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-color: #29F3FF;
+}
+
+input.form__check[type=checkbox]:after {
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    visibility: visible;
+    border: 1px solid #29F3FF;
+}
+
+.form__btn {
+    background: #26C7E3;
+    width: 216px;
+    border:none;
+}
+.ajax-loader {
+    display: none;
+}
+
+.form__btn:hover {
+    background: #00b3d3;
+}
+
+.map>.container-xl {
+    position: relative;
+}
+
+.map__content {
+    width: 100%;
+    height: 570px;
+}
+
+.map__content * {
+    opacity: 1;
+}
+
+.map-card {
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 15px;
+    width: 342px;
+    padding: 30px;
+    z-index: 1;
+}
+
+.map-card__main {
+    background: #26C7E3;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-card__address,
+.map-card__phone,
+.map-card__mail {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.map-card__address,
+.map-card__phone {
+    margin-bottom: 30px;
+}
+
+.map-card__phone>a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.map-card__map-icon,
+.map-card__phone-icon,
+.map-card__mail-icon {
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 50px;
+}
+
+.fbc-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fbc-items li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.fbc-items li.active span {
+    color: #a1a1a1!important;
+    margin-left: 10px!important;
+}
+
+.fbc-items li a {
+    font-size: 12px;
+    line-height: 13px;
+    color: #333333;
+}
+
+.drug__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.drug__photo-wrapper {
+    max-width: 370px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.drug__photo {
+    width: 100%;
+    height: auto;
+}
+
+.drug__info {
+    max-width: 370px;
+    width: 100%;
+}
+
+.drug__title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #232323;
+    margin-bottom: 16px;
+}
+
+.drug__info-wrapper {
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    color: #232323;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.drug__info-wrapper>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drug__info-wrapper>div>span {
+    font-family: 'Averta CY SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: right;
+    color: #3D3D3D;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.drug__info-wrapper>div>div>span {
+    position: relative;
+    font-family: 'Averta CY Light', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1F1F1F;
+    display: inline-block;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.drug__info-wrapper>div>div>span::after {
+    content: '..............................................................................................................';
+    position: absolute;
+    display: inline-block;
+    right: -103%;
+    width: 100%;
+    z-index: -1;
+}
+
+.drug__btn {
+    width: 100%;
+    display: block;
+    font-family: 'Averta CY ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #1761AC;
+    border: 1px solid #1761AC;
+    border-radius: 5px;
+    padding: 15px;
+    transition: .3s;
+}
+
+.drug__btn:hover {
+    color: #0080ff;
+}
+
+.anyquestion2 {
+    background-image: url(../img/contactus-img2.jpg);
+    margin-top: 20px;
+}
+
+.similarproducts {
+    padding: 80px 0 70px;
+}
+
+.similarproducts .catalogoofproducts__header {
+    margin-bottom: 53px;
+}
+
+.contactinfo {
+    margin-bottom: 50px;
+}
+
+.contactinfo__title {
+    margin-bottom: 50px;
+}
+
+.contactinfo__subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contactinfo__subtitle {
+    font-family: 'Averta CY SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.contactinfo__btn {
+    display: block;
+    width: 193px;
+    padding: 16px 0;
+    font-family: 'Averta CY ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #00AFEF;
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s;
+}
+
+.contactinfo__btn:hover {
+    color: #FFFFFF;
+    background: #0890c2;
+}
+
+.contactinfo__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactinfo__info-wrapper>a {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactinfo__info-wrapper>a>svg {
+    margin-right: 22px;
+    margin-bottom: 2px;
+}
+
+.contactinfo__info-wrapper>a>div>span {
+    font-size: 12px;
+    line-height: 15px;
+    color: #AFB0B4;
+}
+
+.contactinfo__info-wrapper>a>div>p {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #232323;
+}
+
+.contactinfo__info-wrapper>a:last-child>div>p {
+    line-height: 1.5;
+    font-family: 'Averta CY Regular', sans-serif;
+    font-weight: 400;
+}
+
+.contacts-map .map-card>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts-map .map-card>div:first-child>div {
+    background: #F5F7FA;
+    display: inline-block;
+    padding: 10px 22px;
+    color: #AFB0B4;
+}
+
+.contacts-map .map-card>div:first-child>div.active {
+    background: #16B8C2;
+    color: #fff;
+}
+
+.aboutus__title {
+    margin-bottom: 30px;
+}
+
+.aboutus__inner>.row {
+    margin-bottom: 20px;
+}
+
+.aboutus__text-wrapper,
+.aboutus__photo-wrapper {
+    height: 100%;
+}
+
+.aboutus__text-wrapper>p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #12204D;
+    margin-bottom: 20px;
+}
+
+.aboutus__photo-wrapper>img {
+    width: 100%;
+    height: auto;
+}
+
+/* ............................................................................. */
+
+.footer {
+    padding: 35px 0;
+}
+
+.footer__inner>.row {
+    justify-content: space-between;
+}
+
+.footer__logo-text {
+    font-family: 'Averta CY Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.footer__link-store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__list {
+    max-width: 180px;
+}
+
+.footer__list .menu-item a, .footer__list-link {
+    display: block;
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #333333;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.footer__list .menu-item a:hover, .footer__list-linka {
+    color: #222;
+}
+
+.footer__list-info>.footer__list .menu-item:not(:first-child) {
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.footer__list-info>.footer__list .menu-item:not(:first-child)>svg {
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.footer__list-mail,
+.footer__list-phone,
+.footer__list-map {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.footer__list-mail:hover,
+.footer__list-phone:hover,
+.footer__list-map:hover {
+    color: #222;
+}
+
+.footer__socials-title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.footer__socials-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer__socials-link:first-child {
+    margin-right: 16px;
+}
+
+.footer__btn {
+    margin-bottom: 23px;
+}
+
+.footer__license {
+    font-family: 'Averta CY Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 145%;
+    color: #333333;
+}
+
+.Modal {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(145, 145, 145, 0.1);
+    transition: .3s;
+    z-index: 101;
+}
+
+.Modal.active {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Modal__title {
+    font-family: 'Averta CY Bold', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.Modal__input,
+.Modal__textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px 0;
+    text-indent: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #b4b4b4;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.Modal__textarea {
+    height: 95px;
+    resize: none;
+}
+
+.Modal__input:focus {
+    border-color: #000;
+}
+
+.Modal__chexbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+.Modal__check {
+    margin-right: 15px;
+}
+
+input.Modal__check[type=checkbox]:checked:after {
+    content: "\2714";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-color: #333;
+}
+
+input.Modal__check[type=checkbox]:after {
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    visibility: visible;
+    border: 1px solid #333;
+    margin-top: 5px;
+}
+
+.Modal__text {
+    font-size: 14px;
+}
+.Modal__btn {
+    font-family: 'Averta CY SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    padding: 14px 0;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    background-color: #26C7E3;
+    transition: .3s;
+    width: 100%;
+    display: block;
+    border: none;
+}
+.Modal__btn:hover{
+    color: #fff;
+    background-color: #26a5bb;
+}
+.wpcf7-list-item-label {
+    display: none;
+}
+.wpcf7-list-item {
+    margin:0px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
+.wrapper.active {
+    display: block;
+}
